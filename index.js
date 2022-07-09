@@ -1,28 +1,23 @@
-/*let setting = {
-    selector : String,
-    theme : {
-        dark : String,
-        light: String
-    }
-}*/
 export default class ThemeChanger {
-    'use strict'
+    #darkData
+    #lightData
+    #status
     constructor(data) {
         if (!localStorage.ThemeChangerChangerLastTheme)
             localStorage.ThemeChangerChangerLastTheme = 0
-        this.status = +localStorage.ThemeChangerChangerLastTheme
+        this.#status = +localStorage.ThemeChangerChangerLastTheme
 
         if (!data) return
 
         let selector = data.selector
-        this.darkData = data.theme?.dark
-        this.lightData = data.theme?.light
+        this.#darkData = data.theme?.dark
+        this.#lightData = data.theme?.light
 
-        if (!this.darkData || !this.lightData) {
+        if (!this.#darkData || !this.#lightData) {
             console.error("Required css is not found is not in the constructor()")
             return
         }
-        this.#apply(this.status)
+        this.#apply(this.#status)
 
         if (!selector) return
         let domElem = document.querySelectorAll(selector)
@@ -47,8 +42,15 @@ export default class ThemeChanger {
             case 2:
                 this.#darkMode()
         }
-
     }
+    getTheme(){
+        switch(this.#status){
+            case 0 : return 'Auto'
+            case 1 : return 'Light'
+            case 2 : return 'Dark'
+        }
+    }
+
     getCurrentTheme() {
         const theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (theme)
@@ -57,8 +59,8 @@ export default class ThemeChanger {
     }
 
     toggle() {
-        this.#changeStatus((this.status + 1) % 3)
-        switch (this.status) {
+        this.#changeStatus((this.#status + 1) % 3)
+        switch (this.#status) {
             case 0:
                 this.#autoMode()
                 break
@@ -71,14 +73,14 @@ export default class ThemeChanger {
     }
 
     #changeStatus(status) {
-        this.status = status
+        this.#status = status
         localStorage.ThemeChangerChangerLastTheme = status
     }
     #darkMode() {
-        this.#changeCssVar(this.darkData)
+        this.#changeCssVar(this.#darkData)
     }
     #lightMode() {
-        this.#changeCssVar(this.lightData)
+        this.#changeCssVar(this.#lightData)
     }
     applyAutoMode() {
         this.#autoMode()
