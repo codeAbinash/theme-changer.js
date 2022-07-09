@@ -37,8 +37,8 @@ Files
 
 ### test.js
 ```js
-import CSSTheme from "https://codeabinash.github.io/theme-changer.js/index.js";
-let theme = new CSSTheme({
+import ThemeChanger from "https://codeabinash.github.io/theme-changer.js/index.js";
+let theme = new ThemeChanger({
     selector : '.btn',
     theme: {
         light:
@@ -56,7 +56,7 @@ let theme = new CSSTheme({
 
 ### `constructor()`
 ```js
-let theme = new CSSTheme({
+let theme = new ThemeChanger({
     selector : '.btn', // css selector (internally querySelectorAll)
     theme: {
         light: // css code 
@@ -70,7 +70,7 @@ let theme = new CSSTheme({
 ```
 ### It is ok to skip the `selector` property, but if you skip the `theme` property, it will throw an error.
 ```js
-let theme = new CSSTheme({
+let theme = new ThemeChanger({
     theme: {
         light: 'CSS code for light theme',
         dark: 'CSS code for dark theme';

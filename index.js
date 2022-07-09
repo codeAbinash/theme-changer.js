@@ -5,12 +5,12 @@
         light: String
     }
 }*/
-export default class CSSTheme {
+export default class ThemeChanger {
     'use strict'
     constructor(data) {
-        if (!localStorage.cssThemeChangerLastTheme)
-            localStorage.cssThemeChangerLastTheme = 0
-        this.status = +localStorage.cssThemeChangerLastTheme
+        if (!localStorage.ThemeChangerChangerLastTheme)
+            localStorage.ThemeChangerChangerLastTheme = 0
+        this.status = +localStorage.ThemeChangerChangerLastTheme
 
         if (!data) return
 
@@ -72,7 +72,7 @@ export default class CSSTheme {
 
     #changeStatus(status) {
         this.status = status
-        localStorage.cssThemeChangerLastTheme = status
+        localStorage.ThemeChangerChangerLastTheme = status
     }
     #darkMode() {
         this.#changeCssVar(this.darkData)
