@@ -1,5 +1,7 @@
 # CSS var Theme Changer
 The simplest JavaScript library to apply light - dark theme in your website.
+## First Check Out One example : https://codeabinash.github.io/theme-changer.js/test/eg1/
+
 ## How to use
 
 Files
@@ -50,7 +52,7 @@ let theme = new themeChanger({
     }
 })
 ```
-## Check The example from here : https://codeabinash.github.io/theme-changer.js/test/
+Check The example from here : https://codeabinash.github.io/theme-changer.js/test/
 
 
 
