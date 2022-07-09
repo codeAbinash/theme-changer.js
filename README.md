@@ -50,5 +50,62 @@ let theme = new CSSTheme({
     }
 })
 ```
-Check The example here : 
+## Check The example from here : https://codeabinash.github.io/theme-changer.js/test/
 
+
+
+### `constructor()`
+```js
+let theme = new CSSTheme({
+    selector : '.btn', // css selector (internally querySelectorAll)
+    theme: {
+        light: // css code 
+            `--bg : #ddd;
+            --text: #555;`,
+        dark: // css code
+            `--text: #eee;
+            --bg: #222;`
+    }
+})
+```
+### It is ok to skip the `selector` property, but if you skip the `theme` property, it will throw an error.
+```js
+let theme = new CSSTheme({
+    theme: {
+        light: 'CSS code for light theme',
+        dark: 'CSS code for dark theme';
+    }
+})
+```
+
+### `getCurrentTheme()`
+```js
+theme.getCurrentTheme() 
+// returns 'light' or 'dark'
+```
+
+### `toggle()`
+```js
+theme.toggle()
+// toggles theme as auto - light - dark 
+```
+
+### `applyAutoMode()`
+```js
+theme.applyAutoMode()
+// applies auto mode
+```
+
+### `applyLightMode()`
+```js
+theme.applyLightMode()
+// applies light mode
+```
+### `applyDarkMode()`
+```js
+theme.applyDarkMode()
+// applies dark mode
+```
+
+
+## for npm
