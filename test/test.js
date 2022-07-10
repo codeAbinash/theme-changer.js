@@ -1,4 +1,5 @@
 import ThemeChanger from "../src/index.js";
+
 let theme = new ThemeChanger({
     selector : '.btn',
     theme: {

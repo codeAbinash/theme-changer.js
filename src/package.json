@@ -1,0 +1,25 @@
+{
+  "name": "theme-changer-light-dark",
+  "version": "1.0.0",
+  "description": "A JavaScript Library to cahnge themes (light-dark-auto)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeAbinash/theme-changer.js.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Theme",
+    "Light",
+    "Dark"
+  ],
+  "author": "Abinash Karmakar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeAbinash/theme-changer.js/issues"
+  },
+  "homepage": "https://github.com/codeAbinash/theme-changer.js#readme"
+}
