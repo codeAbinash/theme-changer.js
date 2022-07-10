@@ -41,7 +41,7 @@ Files
 
 ### test.js
 ```js
-import themeChanger from "https://codeabinash.github.io/theme-changer.js/src/index.js";
+import themeChanger from "https://codeabinash.github.io/theme-changer.js/index.js";
 let theme = new themeChanger({
     selector : '.btn',
     theme: {
