@@ -1,4 +1,4 @@
-import ThemeChanger from "../index.js";
+import ThemeChanger from "../src/index.js";
 let theme = new ThemeChanger({
     selector : '.btn',
     theme: {
