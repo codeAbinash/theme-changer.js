@@ -1,6 +1,6 @@
 {
   "name": "theme-changer-light-dark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript Library to cahnge themes (light-dark-auto)",
   "main": "index.js",
   "scripts": {
