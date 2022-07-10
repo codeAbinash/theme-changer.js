@@ -119,5 +119,7 @@ theme.applyDarkMode()
 ```
 
 
-## for npm
-..........
+## npm
+```
+npm i theme-changer-light-dark
+```
