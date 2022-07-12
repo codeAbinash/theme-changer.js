@@ -1,19 +1,15 @@
 # Theme Changer
 
-```
-npm i theme-changer-light-dark
-```
-
 ![Theme Changer](https://codeabinash.github.io/codeAbinash/files/repo/images/theme-changer.js.png)
 
 The simplest JavaScript library to apply light - dark theme in your website.
-## First Check Out One example : https://codeabinash.github.io/theme-changer.js/test/eg1/
+## First Check Out One [Example](https://codeabinash.github.io/theme-changer.js/test/eg1/)
 
 ## How to use
 
 ### style.css
 ```css
-    body {
+body {
     background-color: var(--bg);
     color: var(--text);
 }
