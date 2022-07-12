@@ -1,7 +1,7 @@
 {
   "name": "theme-changer-light-dark",
-  "version": "1.0.2",
-  "description": "A JavaScript Library to cahnge themes (light-dark-auto)",
+  "version": "1.0.3",
+  "description": "A JavaScript Library to change themes (Light - Dark - Auto)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
