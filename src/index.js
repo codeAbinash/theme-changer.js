@@ -1,4 +1,4 @@
-class ThemeChanger {
+export default class ThemeChanger {
     #darkData
     #lightData
     #status
@@ -115,4 +115,3 @@ class ThemeChanger {
         })
     }
 }
-module.exports = ThemeChanger
